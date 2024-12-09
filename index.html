@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Médicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1>Insira seus dados:</h1>
+
+    <form id="medicoForm">
+        <div>
+            <label for="nome">Nome do Médico:</label>
+            <input type="text" id="nome" required>
+        </div>
+        <div>
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" required>
+        </div>
+        <div>
+            <label for="crm">CRM:</label>
+            <input type="text" id="crm" required>
+        </div>
+        <button type="button" onclick="inserirMedico()">Inserir</button>
+    </form>
+
+    <table id="tabelaMedicos">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
